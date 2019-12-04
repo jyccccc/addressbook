@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MainActivity">
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        >
+
+        <EditText
+            android:id="@+id/search_bar"
+            app:layout_heightPercent="7%"
+            android:layout_width="match_parent"
+            android:hint="搜索联系人"
+            android:cursorVisible="false"
+            android:maxLines="1"
+            android:inputType="text"
+            />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/dataView"
+            android:layout_width="match_parent"
+            app:layout_heightPercent="85%"
+            android:scrollbars="vertical"
+            android:layout_below="@+id/search_bar"
+            >
+        </android.support.v7.widget.RecyclerView>
+
+        <android.support.design.widget.BottomNavigationView
+            android:id="@+id/navigation"
+            android:layout_width="match_parent"
+            app:layout_heightPercent="8%"
+            app:menu="@menu/navigation"
+            app:itemIconTint="@drawable/bottom"
+            android:layout_below="@+id/dataView"
+            >
+        </android.support.design.widget.BottomNavigationView>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/mFab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/navigation"
+            android:layout_marginLeft="325dp"
+            android:layout_marginBottom="30dp"
+            android:src="@android:drawable/ic_input_add" />
+
+    </android.support.percent.PercentRelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

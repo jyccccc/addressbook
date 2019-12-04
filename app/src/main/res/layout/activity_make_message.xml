@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activities.MakeMessage">
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <ImageButton
+            android:id="@+id/back"
+            app:layout_heightPercent="7%"
+            android:layout_width="wrap_content"
+            android:src="@mipmap/left"
+            android:background="#ffffff"/>
+        <EditText
+            android:layout_width="match_parent"
+            app:layout_heightPercent="7%"
+            android:layout_toRightOf="@+id/back"
+            android:id="@+id/receiver"
+            android:hint="短信接收人"
+            android:background="#ffffff"
+            />
+        <view class="android.support.v7.widget.RecyclerView"
+            android:layout_width="match_parent"
+            app:layout_heightPercent="86%"
+            android:layout_below="@+id/back"
+            android:id="@+id/msgRecycle">
+        </view>
+        <EditText
+            android:id="@+id/content"
+            android:layout_below="@+id/msgRecycle"
+            app:layout_widthPercent="80%"
+            app:layout_heightPercent="7%"
+            android:hint="短信内容"
+            android:background="#ffffff"
+            />
+        <ImageButton
+            android:id="@+id/send"
+            app:layout_widthPercent="20%"
+            app:layout_heightPercent="7%"
+            android:layout_toRightOf="@+id/content"
+            android:src="@mipmap/send"
+            android:layout_below="@+id/msgRecycle"
+            android:background="#ffffff"/>
+    </android.support.percent.PercentRelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

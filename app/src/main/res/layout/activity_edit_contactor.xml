@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.EditContactor">
+    <com.hjq.bar.TitleBar
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/titleBar3"
+        app:layout_constraintBottom_toTopOf="@+id/container"
+        app:leftIcon="@mipmap/no"
+        app:rightIcon="@mipmap/yes"
+        app:title="修改联系人信息"
+        />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/titleBar3"
+        android:padding="20dp"
+        android:id="@+id/container">
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@mipmap/girl"
+            android:layout_marginTop="20dp"
+            />
+
+        <EditText
+            android:id="@+id/forname3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/image"
+            app:layout_constraintBottom_toBottomOf="@+id/forphone3"
+            android:paddingVertical="20dp"
+            android:hint="姓名" />
+
+        <EditText
+            android:id="@+id/forphone3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/forname3"
+            android:paddingVertical="20dp"
+            android:hint="电话" />
+
+        <EditText
+            android:id="@+id/forcompany3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/forphone3"
+            android:paddingVertical="20dp"
+            android:hint="公司" />
+
+        <EditText
+            android:id="@+id/forgroup3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/forcompany3"
+            android:paddingVertical="20dp"
+            android:hint="群组" />
+
+        <EditText
+            android:id="@+id/foremail3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/forgroup3"
+            android:paddingVertical="20dp"
+            android:hint="E-mail" />
+
+        <EditText
+            android:id="@+id/forringtone3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/foremail3"
+            android:paddingVertical="20dp"
+            android:hint="铃声" />
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>

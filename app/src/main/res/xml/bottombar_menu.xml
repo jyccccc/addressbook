@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        id="@+id/tab_call"
+        title="通话"
+        icon="@mipmap/ic_call"
+        barColorWhenSelected="#FE3D81"
+        />
+    <tab
+        id="@+id/tab_contactors"
+        title="联系人"
+        icon="@mipmap/ic_contactors"
+        barColorWhenSelected="#14EE2F"
+        />
+    <tab
+        id="@+id/tab_msg"
+        title="短信"
+        icon="@mipmap/ic_msg"
+        barColorWhenSelected="#FF9800"
+        />
+</tabs>

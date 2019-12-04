@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/navigation_call"
+        android:icon="@mipmap/ic_call"
+        android:title="通话记录"
+
+        />
+
+    <item
+        android:id="@+id/navigation_contactor"
+        android:icon="@mipmap/ic_contactors"
+        android:title="联系人"
+
+
+
+        />
+
+    <item
+        android:id="@+id/navigation_msg"
+        android:icon="@mipmap/ic_msg"
+        android:title="短信"
+
+
+        />
+
+</menu>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ContactorInfo">
+
+    <com.hjq.bar.TitleBar
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/titleBar1"
+        app:layout_constraintBottom_toTopOf="@+id/container1"
+        app:leftIcon="@mipmap/bar_icon_back_black"
+        app:title="联系人信息"
+        />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/titleBar1"
+        android:padding="20dp"
+        android:id="@+id/container1">
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@mipmap/girl"
+            android:layout_marginTop="20dp"
+            />
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/image1"
+            android:id="@+id/btns"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="100dp"
+            >
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit"
+                android:src="@mipmap/edit"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/delete"
+                app:layout_constraintHorizontal_chainStyle="spread_inside"
+                android:background="@drawable/bar_selector_selectable_transparent"
+                />
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toRightOf="@+id/edit"
+                app:layout_constraintRight_toLeftOf="@+id/call"
+                android:id="@+id/delete"
+                android:src="@mipmap/delete"
+                android:background="@drawable/bar_selector_selectable_transparent"
+
+                />
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/call"
+                app:layout_constraintLeft_toRightOf="@+id/delete"
+                app:layout_constraintRight_toLeftOf="@+id/text"
+                android:src="@mipmap/call"
+                android:background="@drawable/bar_selector_selectable_transparent"
+                />
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/text"
+                app:layout_constraintLeft_toRightOf="@+id/call"
+                android:src="@mipmap/text"
+                app:layout_constraintRight_toRightOf="parent"
+                android:background="@drawable/bar_selector_selectable_transparent"
+                />
+        </android.support.constraint.ConstraintLayout>
+        <TextView
+            android:id="@+id/forname1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/btns"
+            android:layout_marginTop="20dp"
+            android:paddingVertical="20dp"
+            android:hint="姓名" />
+
+        <TextView
+            android:id="@+id/forphone1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/forname1"
+            android:layout_marginTop="20dp"
+            android:paddingVertical="20dp"
+            android:hint="电话" />
+
+        <TextView
+            android:id="@+id/forcompany1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/forphone1"
+            android:layout_marginTop="20dp"
+            android:paddingVertical="20dp"
+            android:hint="公司" />
+
+        <TextView
+            android:id="@+id/forgroup1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/forcompany1"
+            android:layout_marginTop="20dp"
+            android:paddingVertical="20dp"
+            android:hint="群组" />
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>
